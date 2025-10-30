@@ -1,7 +1,3 @@
-/*nome: DataTypes.STRING,
-    email: DataTypes.STRING,
-    cpf: DataTypes.STRING,
-    senha: DataTypes.STRING */
 
 import { redirect } from "next/navigation";
 import {Cliente } from "../../../database/tables";

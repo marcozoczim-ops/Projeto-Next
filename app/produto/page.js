@@ -1,4 +1,15 @@
 import { Produto } from "../../database/tables.js"
+import { redirect } from "next/navigation";
+
+
+async function deletaProduto(formData) {
+    'use server';
+    const id = formData.get('id');
+    const produto = await Produto.findByPk(id);
+    await produto.destroy();
+    redirect('/produto')
+    
+}
 
 async function Produtos(){
     const produtos = await Produto.findAll({ raw: true });
@@ -31,6 +42,18 @@ async function Produtos(){
                                     <td>{pro.descricao}</td>
                                     <td>{pro.validade}</td>
                                     <td>{pro.estoque}</td>
+                                    <td>
+                                        <form action={deletaProduto}>
+                                            <input type="hidden" name="id" defaultValue={pro.id}/>
+                                            <button>Excluir</button>
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <form action={'/produto/altera'}>
+                                            <input type="hidden" name="id" defaultValue={pro.id}/>
+                                            <button>Editar</button>
+                                        </form>
+                                    </td>
                                 </tr>
                             )
                         })
