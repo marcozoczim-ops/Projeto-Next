@@ -1,4 +1,5 @@
-import Menu from "../componentes/menu.js"
+import "./css/base.css";
+import Menu from "../componentes/menu.js";
 
 export const metadata = {
   title: 'Next.js',
@@ -9,8 +10,19 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
       <body>
-        <Menu/>
-        {children}
+        <header>
+          FRETE GRATIS PARS TODO BRASIL!!
+        </header>
+        <nav>
+          <Menu/>
+        </nav>
+        <main>
+          {children}
+        </main>
+        <footer>
+          Farmacia Bioplus. 
+        </footer>
+        
       </body>
     </html>
   )

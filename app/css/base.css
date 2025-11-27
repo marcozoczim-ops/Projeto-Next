@@ -1,0 +1,98 @@
+body {
+    background-color: #e9ffcd;
+    margin: 0;
+    
+}
+
+header{
+    background-color: #3d7f0c;
+    padding: 10px 20px;
+    color: #e9ffcd;
+    width: 100%;
+    text-align: center;
+    height: 12px;
+    margin: 0;
+}
+
+footer{
+    width: 100%;
+    background-color: #3d7f0c;
+    color: #e9ffcd;
+    padding: 10px 20px;
+    font-size: 16px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999; 
+    margin: 0;
+}
+
+nav {
+    background-color: #e9ffcd;
+    padding: 4px;
+    border-bottom: 2px solid #3d7f0c;
+    display: flex;
+    justify-content: center; 
+    gap: 30px;
+    align-items: center;
+    
+    margin: 0;
+}
+nav a {
+    text-decoration: none;
+    color: #3d7f0c;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    font-size: 16.5px
+}
+
+form{
+    
+    width: 300px;             
+    margin: 0 auto;           
+    position: absolute;
+    top: 45%;                 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #e9ffcd;
+    border: solid 2px #3d7f0c;
+    border-radius: 8px;
+    color: #3d7f0c;
+    text-align: center; 
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #4a8f29;
+    color: #e9ffcd;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+form button:hover {
+    background: #3d751f;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0 15px 0;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-sizing: border-box; /* garante que a largura não quebre */
+}
+
+
+
+
+
+

@@ -15,7 +15,7 @@ function Menu() {
             <a href="/funcionario/novo">Novo Funcionario</a>
             <br/><br/>
            
-            <a href="/fornecedor">fornecedor</a>
+            <a href="/fornecedor">Fornecedor</a>
             <br/>
             <a href="/fornecedor/novo">Novo Fornecedor</a>
             <br/><br/>
