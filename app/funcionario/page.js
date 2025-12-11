@@ -5,6 +5,7 @@ async function Funcionarios(){
     return(
         <div>
             <h1>Lista de Funcionarios</h1>
+            <a href="/funcionario/novo" class="novos">Novo Funcionario</a>
 
             <table border = "1">
                 <thead>

@@ -16,6 +16,7 @@ async function Vendas(){
     return(
             <div>
         <h1>Lista de Vendas</h1>
+        <a href="/venda/novo" class="novos">Nova Venda</a>
 
         <table class="tabela-produtos">
             <thead>

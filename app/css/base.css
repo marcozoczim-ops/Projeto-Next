@@ -56,7 +56,6 @@ h1{
 
 
 
-/* ===== TELA DE CADASTRO ===== */
 .form-cadastro {
   max-width: 400px;
   padding: 20px;
@@ -87,7 +86,7 @@ h1{
   border-color: #5a8f00;
 }
 
-/* Botão cadastrar */
+
 .btn-cadastrar {
   margin-top: 16px;
   width: 100%;
@@ -104,7 +103,7 @@ h1{
   background-color: #3e7e00;
 }
 
-/* ===== TABELA DE EXIBIÇÃO ===== */
+
 .tabela-produtos {
   width: 95%;
   margin: 30px auto;
@@ -128,14 +127,13 @@ h1{
   background-color: #ecffd1;
 }
 
-/* ===== BOTÕES DENTRO DA TABELA ===== */
 .form-acoes {
   display: flex;
   gap: 6px;
   justify-content: center;
 }
 
-/* Botão editar */
+
 .btn-editar {
   padding: 6px 10px;
   background-color: #f0ad4e;
@@ -149,7 +147,7 @@ h1{
   background-color: #d99632;
 }
 
-/* Botão excluir */
+
 .btn-excluir {
   padding: 6px 10px;
   background-color: #d9534f;

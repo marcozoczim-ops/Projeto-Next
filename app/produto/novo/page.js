@@ -23,7 +23,7 @@ async function insereproduto(formData) {
 
 function TelaNovoProduto(){
     return (
-        <form action={insereproduto} class="form-cadastro">
+        <form action={insereproduto} className="form-cadastro">
             
             <label htmlFor="produto">Produto </label> <br/>
             <input type="text" name="produto" placeholder='Digite o produto'></input> <br/>
@@ -56,7 +56,7 @@ function TelaNovoProduto(){
             <label htmlFor="idfornecedor">IDfornecedor </label> <br/>
             <select id='idfornecedor' name="idfornecedor" >
                 <option value="">Escolha ID do Fornecedor</option>
-                <option>1</option>
+                <option>1 </option>
                 <option>2</option>
                 <option>3</option>
                 <option>4</option>
@@ -65,7 +65,7 @@ function TelaNovoProduto(){
 
             <br/>
 
-            <button class="btn-cadastrar">Cadastrar</button>
+            <button className="btn-cadastrar">Cadastrar</button>
 
         </form>
     );

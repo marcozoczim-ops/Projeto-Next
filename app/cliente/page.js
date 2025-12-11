@@ -17,6 +17,7 @@ async function Clientes(){
     return(
         <div>
             <h1>Lista de Clientes</h1>
+            <a href="/cliente/novo" class="novos">Novo Cliente</a>
 
             <table border="1">
                 <thead>

@@ -5,6 +5,7 @@ async function Fornecedores (){
     return(
         <div>
             <h1>Lista de Fornecedores</h1>
+            <a href="/fornecedor/novo" class="novos">Novo Fornecedor</a>
 
             <table border="2">
                 <thead>
