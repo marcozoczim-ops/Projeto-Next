@@ -22,7 +22,7 @@ async function inserevenda(formData) {
 
 function TelaNovoProduto(){
     return (
-        <form action={inserevenda} class="form-cadastro">
+        <form action={inserevenda} className="form-cadastro">
             
             <label htmlFor="valor">Valor da Venda </label> <br/>
             <input type="text" name="valor" placeholder='Digite o Valor'></input> <br/>
@@ -61,7 +61,7 @@ function TelaNovoProduto(){
 
             <br/>
 
-            <button class="btn-cadastrar">Cadastrar</button>
+            <button className="btn-cadastrar">Cadastrar</button>
 
         </form>
     );

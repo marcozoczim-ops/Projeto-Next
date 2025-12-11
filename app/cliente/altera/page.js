@@ -30,12 +30,11 @@ async function TelaEditaCliente ({searchParams}){
         <>
             <h1>Editando Cliente</h1>
 
-            <form action={editacliente}>
-                <br/>
+            <form action={editacliente} class="form-cadastro">
                 
                 <input type="hidden" name="id" defaultValue={cliente.id}/>
 
-                <br/>
+                
            
                 <label htmlFor="nome">Nome</label> <br/>
                 <input type="text" name="nome" defaultValue={cliente.nome}></input> <br/>
@@ -49,7 +48,7 @@ async function TelaEditaCliente ({searchParams}){
                 <label htmlFor="senha">Senha</label> <br/>
                 <input type="text" name="senha" defaultValue={cliente.senha}></input> <br/>
 
-                <button>Cadastrar</button>   
+                <button className="btn-cadastrar">Cadastrar</button>   
 
                 <br/>
             </form>

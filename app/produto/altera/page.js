@@ -11,6 +11,9 @@ async function editaProduto(formData) {
     const desc = formData.get('descricao');
     const val = formData.get('validade');
     const est = formData.get('estoque');
+    const catId = formData.get('idcategoria')
+    const forId = formData.get('idfornecedor')
+
 
     const pro = await Produto.findByPk(id);
     pro.nome = nome;
@@ -19,6 +22,8 @@ async function editaProduto(formData) {
     pro.descricao = desc;
     pro.validade = val;
     pro.estoque = est;
+    pro.CategoriumId = catId;
+    pro.FornecedorId = forId;
 
     await pro.save();
     redirect('/produto')

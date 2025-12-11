@@ -18,7 +18,7 @@ async function Vendas(){
         <h1>Lista de Vendas</h1>
         <a href="/venda/novo" class="novos">Nova Venda</a>
 
-        <table class="tabela-produtos">
+        <table className="tabela-produtos">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -27,6 +27,7 @@ async function Vendas(){
                     <th>IDcliente</th>
                     <th>IDfuncionario</th>
                     <th>IDpagamento</th>
+                    <th>Açoes</th>
                 </tr>
             </thead>
 

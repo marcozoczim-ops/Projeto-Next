@@ -17,7 +17,7 @@ async function Compras(){
         <h1>Lista de Compras</h1>
         <a href="/compra/novo" class="novos">Nova Compra</a>
 
-        <table class="tabela-produtos">
+        <table className="tabela-produtos">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -26,6 +26,7 @@ async function Compras(){
                     <th>Quantidade</th>
                     <th>IDproduto</th>
                     <th>IDfornecedor</th>
+                    <th>Ações</th>
                 </tr>
             </thead>
 
@@ -37,7 +38,7 @@ async function Compras(){
                                 <td>{com.id}</td>
                                 <td>{com.PrecoUni}</td>
                                 <td>{com.SubTot}</td>
-                                <td>{com.Quantidade}</td>
+                                <td>{com.quantidade}</td>
                                 <td>{com.ProdutoId}</td>
                                 <td>{com.FornecedorId}</td>
                                 <td>

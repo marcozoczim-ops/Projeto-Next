@@ -30,7 +30,7 @@ async function TelaEditaVendas({ searchParams }) {
     const venda = await Venda.findByPk(id);
     return(
         <>
-            <h1>Editando Vendast</h1> 
+            <h1>Editando Vendas</h1> 
 
             <form action={editaVenda} class="form-cadastro">
              
@@ -74,7 +74,7 @@ async function TelaEditaVendas({ searchParams }) {
 
                 <br/>
 
-            <button class="btn-cadastrar">Confirmar Edição</button>  
+            <button className="btn-cadastrar">Confirmar Edição</button>  
             </form> 
         </>
     );

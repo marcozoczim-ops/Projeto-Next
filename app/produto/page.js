@@ -18,7 +18,7 @@ async function Produtos(){
         <h1>Lista de Produtos</h1>
         <a href="/produto/novo" class="novos">Novo Produto</a>
 
-        <table class="tabela-produtos">
+        <table className="tabela-produtos">
             <thead>
                 <tr>
                     <th>ID</th>

@@ -17,7 +17,7 @@ async function inserecliente(formData){
 
 function TelaNovoCliente (){
     return(
-        <form action={inserecliente} class="form">
+        <form action={inserecliente} className="form-cadastro">
        
             <label htmlFor="nome">Nome</label> <br/>
             <input type="text" name="nome"></input> <br/>

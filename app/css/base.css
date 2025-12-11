@@ -92,7 +92,7 @@ h1{
   width: 100%;
   padding: 10px;
   background-color: #4c9a00;
-  color: white;
+  color: #e9ffcd;
   font-weight: bold;
   border: none;
   border-radius: 6px;
@@ -108,7 +108,7 @@ h1{
   width: 95%;
   margin: 30px auto;
   border-collapse: collapse;
-  background-color: #f7ffe6;
+  background-color: #e9ffcd;
 }
 
 .tabela-produtos th,
@@ -124,7 +124,7 @@ h1{
 }
 
 .tabela-produtos tr:nth-child(even) {
-  background-color: #ecffd1;
+  background-color: #e9ffcd;
 }
 
 .form-acoes {
@@ -136,7 +136,7 @@ h1{
 
 .btn-editar {
   padding: 6px 10px;
-  background-color: #f0ad4e;
+  background-color: #8fbf3d;
   color: black;
   border: none;
   border-radius: 4px;
@@ -144,19 +144,33 @@ h1{
 }
 
 .btn-editar:hover {
-  background-color: #d99632;
+  background-color: #608029;
 }
 
 
 .btn-excluir {
   padding: 6px 10px;
-  background-color: #d9534f;
-  color: white;
+  background-color: #8fbf3d;
+  color: #e9ffcd;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
 .btn-excluir:hover {
-  background-color: #b52b27;
+  background-color: #6a8d2f;
+}
+
+.novos{
+  text-decoration: none;
+    color: #3d7f0c;
+    font-size: 16px;
+    display: flex;
+    margin: 0 1rem;  
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    color: #3d751f;
+    text-align: center;
 }

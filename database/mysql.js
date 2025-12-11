@@ -1,10 +1,10 @@
 // Chama o SEQUELIZE 
 import { Sequelize } from "sequelize";
 import pg from 'pg';
-/*
+
 const mysql = new Sequelize({
     dialect: 'postgres', 
-    dialectModule: pq,
+    dialectModule: pg,
     host: 'dpg-d4omn8mr433s73cvb570-a',
     port: '5432',
     database: 'database_next',
@@ -12,7 +12,7 @@ const mysql = new Sequelize({
     password: 'jauNuS0GQCaGKQGrsii42SmzZUlr6AxT'
 });
 
-*/
+/*
 import mysql2 from "mysql2";
 
 // CONECTA COM O BANCO
@@ -23,8 +23,7 @@ const mysql = new Sequelize({
     port: '3306',
     database: 'farma_teste',
     username: 'root',
-    password: '3641'
+    password: 'root'
 });
-
-
+*/
 export default mysql; 

@@ -19,7 +19,7 @@ async function Clientes(){
             <h1>Lista de Clientes</h1>
             <a href="/cliente/novo" class="novos">Novo Cliente</a>
 
-            <table border="1">
+            <table className="tabela-produtos">
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -27,6 +27,7 @@ async function Clientes(){
                         <th>Email</th>
                         <th>CPF</th>
                         <th>Senha</th>
+                        <th>Açoes</th>
                     </tr>
                 </thead>
 
@@ -41,17 +42,19 @@ async function Clientes(){
                                     <td>{cli.cpf}</td>
                                     <td>{cli.senha}</td>
                                     <td>
-                                        <form action = {deletacliente} id="exclui">
+                                        <div>
+                                        <form action = {deletacliente} className="form-acoes">
                                             <input type="hidden" name="id" defaultValue={cli.id}/> 
-                                            <button id="exclui">Excluir</button>
+                                            <button id="exclui" class="btn-editar">Excluir</button>
                                         </form>
-                                    </td>
-                                    <td>
-                                        <form action = {'/cliente/altera'} id="edita">
+                                    
+                                        <form action = {'/cliente/altera'} className="form-acoes">
                                             <input type="hidden" name="id" defaultValue={cli.id}/> 
-                                            <button id="edita">Editar</button>
+                                            <button id="edita" class="btn-editar">Editar</button>
                                         </form>
+                                        </div>
                                     </td>
+                                    
 
                                 </tr>
                             )

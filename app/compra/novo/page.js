@@ -6,8 +6,8 @@ async function inserecompra(formData) {
     'use server'
     const dados = {
         PrecoUni: formData.get('preco'),
-        Quantidade: formData.get('quant'),
-        SubTotal: formData.get('sub'),
+        quantidade: formData.get('quant'),
+        SubTot: formData.get('sub'),
         ProdutoId: formData.get('idproduto'),             
         FornecedorId: formData.get('idfornecedor')             
     }

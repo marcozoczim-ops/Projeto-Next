@@ -16,7 +16,7 @@ async function inserefornecedor(formData){
 
 function TelaNovoFornecedor(){
     return(
-        <form action={inserefornecedor}>
+        <form action={inserefornecedor} className="form-cadastro">
     
             <label htmlFor="nome">Nome</label> <br/>
             <input type="text" name="nome"></input> <br/>
@@ -28,7 +28,7 @@ function TelaNovoFornecedor(){
             <input type="text" name="telefone"></input> <br/>
             <br/>
 
-            <button>Cadastrar</button>         
+            <button className="btn-cadastrar">Cadastrar</button>         
         </form>
     )
 }
