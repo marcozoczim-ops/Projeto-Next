@@ -40,15 +40,15 @@ async function Clientes(){
                                     <td>{cli.cpf}</td>
                                     <td>{cli.senha}</td>
                                     <td>
-                                        <form action = {deletacliente}>
+                                        <form action = {deletacliente} id="exclui">
                                             <input type="hidden" name="id" defaultValue={cli.id}/> 
-                                            <button>Excluir</button>
+                                            <button id="exclui">Excluir</button>
                                         </form>
                                     </td>
                                     <td>
-                                        <form action = {'/cliente/altera'}>
+                                        <form action = {'/cliente/altera'} id="edita">
                                             <input type="hidden" name="id" defaultValue={cli.id}/> 
-                                            <button>Editar</button>
+                                            <button id="edita">Editar</button>
                                         </form>
                                     </td>
 

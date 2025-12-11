@@ -1,8 +1,8 @@
 import { redirect } from 'next/navigation';
-import { Produto } from '../../../database/tables';
+import { Venda } from '../../../database/tables';
 
 
-async function insereproduto(formData) {
+async function inserevenda(formData) {
     'use server'
     const dados = {
         nome: formData.get('produto'),
@@ -15,20 +15,20 @@ async function insereproduto(formData) {
         FornecedorId: formData.get('idfornecedor')             
     }
 
-    await Produto.create(dados);
-    redirect('/produto')
+    await Venda.create(dados);
+    redirect('/venda')
 
 }
     
 
 function TelaNovoProduto(){
     return (
-        <form action={insereproduto} class="form-cadastro">
+        <form action={inserevenda} class="form-cadastro">
             
-            <label htmlFor="produto">Produto </label> <br/>
-            <input type="text" name="produto" placeholder='Digite o produto'></input> <br/>
+            <label htmlFor="valor">Valor da Venda </label> <br/>
+            <input type="text" name="valor" placeholder='Digite o Valor'></input> <br/>
             
-            <label htmlFor="tipo">Tipo </label> <br/>
+            <label htmlFor="tipo">Data da Ved </label> <br/>
             <input type="text" name="tipo" placeholder='Digite o tipo'></input> <br/>
 
             <label htmlFor="preco">Preço </label><br/>

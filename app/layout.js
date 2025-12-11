@@ -19,9 +19,7 @@ export default function RootLayout({ children }) {
         <main>
           {children}
         </main>
-        <footer>
-          Farmacia Bioplus. 
-        </footer>
+       
         
       </body>
     </html>

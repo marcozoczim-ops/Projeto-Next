@@ -24,6 +24,10 @@ function Menu() {
             <br/>
             <a href="/cliente/novo">Novo Cliente</a>
 
+            <br/>
+            <a href="/venda">Vendas</a>
+            
+
 
 
 

@@ -28,7 +28,7 @@ function TelaNovoFuncionario(){
             <label htmlFor="cargo">Cargo </label><br/>
             <input type="text" name="cargo"></input> <br/>
             
-            <br/><br/> <label htmlFor="salario">Salario </label> <br/>
+            <label htmlFor="salario">Salario </label> <br/>
             <input type="text" name="salario"></input> <br/>
 
             <br/>
